@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:project_get/app/controllers/auth_controller.dart';
-import 'package:project_get/app/routes/app_pages.dart';
+import 'package:uas_21312061/app/routes/app_pages.dart';
+import 'package:uas_21312061/app/controllers/auth_controller.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -16,7 +16,7 @@ class HomeView extends GetView<HomeController> {
             onTap: () {
               Get.back();
               Get.toNamed(
-                Routes.UPDATE_PRODUCT,
+                Routes.UPDATE_MAHASISWA,
                 arguments: id,
               );
             },
@@ -106,7 +106,7 @@ class HomeView extends GetView<HomeController> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => Get.toNamed(Routes.ADD_PRODUCT),
+        onPressed: () => Get.toNamed(Routes.ADD_MAHASISWA),
         child: Icon(Icons.add),
       ),
     );
